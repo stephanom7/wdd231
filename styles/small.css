@@ -36,3 +36,15 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+.completed {
+  background-color: #c8e6c9;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+.incomplete {
+  background-color: #ffcdd2;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
