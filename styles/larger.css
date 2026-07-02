@@ -1,0 +1,16 @@
+@media (min-width: 32.5rem) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+}
