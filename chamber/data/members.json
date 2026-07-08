@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Tech Solutions Quito",
+    "address": "Av. Amazonas 123, Quito",
+    "phone": "+593 987654321",
+    "website": "https://techsolutions.com",
+    "image": "techsolutions.jpg",
+    "membership": 3
+  },
+  {
+    "name": "EcoMarket",
+    "address": "Calle 10 de Agosto 456, Quito",
+    "phone": "+593 912345678",
+    "website": "https://ecomarket.ec",
+    "image": "ecomarket.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Andes Travel",
+    "address": "Av. Naciones Unidas 789, Quito",
+    "phone": "+593 998877665",
+    "website": "https://andestravel.ec",
+    "image": "andestravel.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Quito Print",
+    "address": "Av. Colón 321, Quito",
+    "phone": "+593 991122334",
+    "website": "https://quitoprint.ec",
+    "image": "quitoprint.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Café Colonial",
+    "address": "Calle Sucre 55, Quito",
+    "phone": "+593 998877112",
+    "website": "https://cafecolonial.ec",
+    "image": "cafecolonial.jpg",
+    "membership": 1
+  },
+  {
+    "name": "AutoFix Garage",
+    "address": "Av. Galo Plaza 999, Quito",
+    "phone": "+593 997755331",
+    "website": "https://autofix.ec",
+    "image": "autofix.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Green Energy",
+    "address": "Av. República 222, Quito",
+    "phone": "+593 996644221",
+    "website": "https://greenenergy.ec",
+    "image": "greenenergy.jpg",
+    "membership": 2
+  }
+]
