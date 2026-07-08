@@ -3,24 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quito Chamber of Commerce</title>
-  <meta name="description" content="Directory of businesses in Quito Chamber of Commerce">
+  <title>Quito Chamber of Commerce Directory</title>
+  <meta name="description" content="Discover and connect with businesses in the Quito Chamber of Commerce Directory. Find services, shops, and companies in your area.">
   <meta name="author" content="Stephano Martinez">
 
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+  <!-- Social Media Meta -->
   <meta property="og:title" content="Quito Chamber of Commerce Directory">
-  <meta property="og:description" content="Explore businesses in Quito Chamber of Commerce">
-  <meta property="og:image" content="images/social.jpg">
+  <meta property="og:description" content="Discover and connect with businesses in the Quito Chamber of Commerce Directory. Find services, shops, and companies in your area.">
+  <meta property="og:image" content="https://stephanom7.github.io/wdd231/chamber/images/social.jpg">
   <meta property="og:url" content="https://stephanom7.github.io/wdd231/chamber/directory.html">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
   <header>
-    <h1>Quito Chamber of Commerce</h1>
     <nav>
       <ul>
         <li><a href="directory.html">Directory</a></li>
@@ -31,6 +38,7 @@
   </header>
 
   <main>
+    <h1>Quito Chamber of Commerce Directory</h1>
     <div class="view-buttons">
       <button id="gridBtn">Grid View</button>
       <button id="listBtn">List View</button>
@@ -45,6 +53,6 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/directory.js"></script>
+  <script src="scripts/directory.js" defer></script>
 </body>
 </html>
