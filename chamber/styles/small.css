@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f0f4f8;
 }
 
 header, footer {
@@ -16,20 +17,36 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav li {
-  margin: 0 1rem;
+  margin: 0.5rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .view-buttons {
   text-align: center;
   margin: 1rem;
+}
+
+.view-buttons button {
+  background-color: #004466;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-buttons button:hover {
+  background-color: #006699;
 }
 
 .grid {
@@ -47,7 +64,14 @@ nav a {
 .card {
   border: 1px solid #ccc;
   padding: 1rem;
-  background: #f9f9f9;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
 }
 
 .card img {
@@ -55,4 +79,9 @@ nav a {
   height: 200px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+footer p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
 }

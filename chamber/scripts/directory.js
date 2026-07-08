@@ -38,9 +38,7 @@ function displayMembers(members, view) {
 document.getElementById("gridBtn").addEventListener("click", () => loadMembers("grid"));
 document.getElementById("listBtn").addEventListener("click", () => loadMembers("list"));
 
-// Footer year and last modified
 document.getElementById("year").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = document.lastModified;
 
-// Initial load
 loadMembers();
