@@ -3,28 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quito Chamber of Commerce Directory</title>
-  <meta name="description" content="Discover and connect with businesses in the Quito Chamber of Commerce Directory. Find services, shops, and companies in your area.">
+  <title>Quito Chamber of Commerce | Thank You</title>
+  <meta name="description" content="Thank you for applying to join the Quito Chamber of Commerce.">
   <meta name="author" content="Stephano Martinez">
 
-  <!-- Favicon -->  
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- Social Media Meta -->
-  <meta property="og:title" content="Quito Chamber of Commerce Directory">
-  <meta property="og:description" content="Discover and connect with businesses in the Quito Chamber of Commerce Directory. Find services, shops, and companies in your area.">
+  <meta property="og:title" content="Thank You | Quito Chamber of Commerce">
+  <meta property="og:description" content="Thank you for applying to join the Quito Chamber of Commerce.">
   <meta property="og:image" content="https://stephanom7.github.io/wdd231/chamber/images/social.jpg">
-  <meta property="og:url" content="https://stephanom7.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://stephanom7.github.io/wdd231/chamber/thankyou.html">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/join.css">
+
+  <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
   <header>
@@ -33,17 +32,23 @@
         <li><a href="directory.html">Directory</a></li>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="join.html">Join</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Quito Chamber of Commerce Directory</h1>
-    <div class="view-buttons">
-      <button id="gridBtn">Grid View</button>
-      <button id="listBtn">List View</button>
+    <h1>Thank You for Applying!</h1>
+    <p>We appreciate your interest in joining the Quito Chamber of Commerce. Here is a summary of your application:</p>
+
+    <div class="thankyou-summary">
+      <p><strong>First Name:</strong> <span id="displayFirstName"></span></p>
+      <p><strong>Last Name:</strong> <span id="displayLastName"></span></p>
+      <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+      <p><strong>Mobile:</strong> <span id="displayMobile"></span></p>
+      <p><strong>Business Name:</strong> <span id="displayOrgName"></span></p>
+      <p><strong>Submitted:</strong> <span id="displayTimestamp"></span></p>
     </div>
-    <section id="members" class="grid"></section>
   </main>
 
   <footer>
@@ -52,7 +57,5 @@
     <p>Developed by Stephano Martinez - WDD 231</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
-
-  <script src="scripts/directory.js" defer></script>
 </body>
 </html>

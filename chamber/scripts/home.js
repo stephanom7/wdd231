@@ -11,7 +11,7 @@ async function getCurrentWeather() {
     const response = await fetch(url);
     const data = await response.json();
 
-    if (!response.ok) throw new Error("API key aún no activa");
+    if (!response.ok) throw new Error("API key not active yet");
 
     const temp = Math.round(data.main.temp);
     const description = data.weather[0].description;
@@ -23,8 +23,8 @@ async function getCurrentWeather() {
       <p class="description">${description}</p>
     `;
   } catch (error) {
-    console.log("Clima aún no disponible:", error.message);
-    document.getElementById("current-weather").innerHTML = "<p>Cargando clima...</p>";
+    console.log("Weather not available yet:", error.message);
+    document.getElementById("current-weather").innerHTML = "<p>Loading weather...</p>";
   }
 }
 
@@ -34,22 +34,22 @@ async function getForecast() {
     const response = await fetch(url);
     const data = await response.json();
 
-    if (!response.ok) throw new Error("API key aún no activa");
+    if (!response.ok) throw new Error("API key not active yet");
 
-    const dias = data.list.filter(item => item.dt_txt.includes("12:00:00"));
+    const days = data.list.filter(item => item.dt_txt.includes("12:00:00"));
 
-    let html = "<h3>Pronóstico 3 días</h3><div class='forecast-row'>";
-    dias.slice(0, 3).forEach(dia => {
-      const fecha = new Date(dia.dt_txt);
-      const nombreDia = fecha.toLocaleDateString("en-US", { weekday: "short" });
-      const temp = Math.round(dia.main.temp);
-      html += `<div class="forecast-day"><p>${nombreDia}</p><p>${temp}°C</p></div>`;
+    let html = "<h3>3-Day Forecast</h3><div class='forecast-row'>";
+    days.slice(0, 3).forEach(day => {
+      const date = new Date(day.dt_txt);
+      const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
+      const temp = Math.round(day.main.temp);
+      html += `<div class="forecast-day"><p>${dayName}</p><p>${temp}°C</p></div>`;
     });
     html += "</div>";
 
     document.getElementById("forecast").innerHTML = html;
   } catch (error) {
-    console.log("Pronóstico aún no disponible:", error.message);
+    console.log("Forecast not available yet:", error.message);
     document.getElementById("forecast").innerHTML = "";
   }
 }
@@ -58,24 +58,24 @@ async function loadSpotlights() {
   const response = await fetch("data/members.json");
   const members = await response.json();
 
-  const elegibles = members.filter(m => m.membership === 2 || m.membership === 3);
-  const mezclados = elegibles.sort(() => 0.5 - Math.random());
-  const cantidad = Math.random() < 0.5 ? 2 : 3;
-  const seleccionados = mezclados.slice(0, cantidad);
+  const eligible = members.filter(m => m.membership === 2 || m.membership === 3);
+  const shuffled = eligible.sort(() => 0.5 - Math.random());
+  const count = Math.random() < 0.5 ? 2 : 3;
+  const selected = shuffled.slice(0, count);
 
   const container = document.getElementById("spotlight-cards");
   container.innerHTML = "";
 
-  seleccionados.forEach(member => {
-    const nivel = member.membership === 3 ? "Gold Member" : "Silver Member";
+  selected.forEach(member => {
+    const level = member.membership === 3 ? "Gold Member" : "Silver Member";
     container.innerHTML += `
       <div class="spotlight-card">
         <img src="images/${member.image}" alt="${member.name}">
         <h3>${member.name}</h3>
         <p>${member.address}</p>
         <p>${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visitar sitio web</a>
-        <p class="membership-level">${nivel}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
+        <p class="membership-level">${level}</p>
       </div>
     `;
   });
