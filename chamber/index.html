@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quito Chamber of Commerce | Home</title>
+  <meta name="description" content="Página principal de la Cámara de Comercio de Quito">
+  <meta name="author" content="Stephano Martinez">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/home.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/andestravel.jpg" alt="Quito" class="hero-image">
+      <div class="hero-text">
+        <h1>Quito Chamber of Commerce</h1>
+        <p>Conectando negocios locales. Construyendo una comunidad más fuerte.</p>
+        <a href="join.html" class="cta-button">Únete a la Cámara</a>
+      </div>
+    </section>
+
+    <section class="events">
+      <h2>Eventos Actuales</h2>
+      <ul class="events-list">
+        <li><h3>Networking Empresarial</h3><p>5 de agosto, 2026</p></li>
+        <li><h3>Expo Pequeñas Empresas</h3><p>20 de agosto, 2026</p></li>
+        <li><h3>Gala Anual</h3><p>12 de septiembre, 2026</p></li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Clima en Quito</h2>
+      <div id="current-weather"></div>
+      <div id="forecast"></div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Miembros Destacados</h2>
+      <div id="spotlight-cards" class="spotlight-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: info@quitochamber.com | Phone: +593 999 999 999</p>
+    <p>&copy; <span id="year"></span> Quito Chamber of Commerce</p>
+    <p>Developed by Stephano Martinez - WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/home.js" defer></script>
+</body>
+</html>
