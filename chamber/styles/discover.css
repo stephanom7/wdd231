@@ -1,0 +1,121 @@
+/* ===== Visitor message ===== */
+.visitor-message {
+  background-color: #004466;
+  color: white;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+/* ===== Discover hero ===== */
+.discover-hero {
+  text-align: center;
+  padding: 1rem;
+}
+
+/* =========================================================
+   SMALL screens: 320px - 640px  (default, no media query)
+   One column, all cards equal size
+   ========================================================= */
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "c1"
+    "c2"
+    "c3"
+    "c4"
+    "c5"
+    "c6"
+    "c7"
+    "c8";
+}
+
+.card1 { grid-area: c1; }
+.card2 { grid-area: c2; }
+.card3 { grid-area: c3; }
+.card4 { grid-area: c4; }
+.card5 { grid-area: c5; }
+.card6 { grid-area: c6; }
+.card7 { grid-area: c7; }
+.card8 { grid-area: c8; }
+
+.discover-grid .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.discover-grid figure {
+  margin: 0;
+}
+
+.discover-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+
+.discover-grid button {
+  background-color: #004466;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.discover-grid button:hover {
+  background-color: #006699;
+}
+
+/* =========================================================
+   MEDIUM screens: 641px - 1024px
+   Two equal columns, four equal rows
+   ========================================================= */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "c1 c2"
+      "c3 c4"
+      "c5 c6"
+      "c7 c8";
+  }
+
+  .discover-grid img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .discover-grid img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}
+
+/* =========================================================
+   LARGE screens: 1025px and above
+   Four equal columns, two equal rows
+   ========================================================= */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "c1 c2 c3 c4"
+      "c5 c6 c7 c8";
+  }
+
+  .discover-grid img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .discover-grid img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+  }
+}

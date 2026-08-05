@@ -3,28 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quito Chamber of Commerce Directory</title>
-  <meta name="description" content="Discover and connect with businesses in the Quito Chamber of Commerce Directory. Find services, shops, and companies in your area.">
+  <title>Quito Chamber of Commerce | Discover</title>
+  <meta name="description" content="Discover the top places of interest around Quito, presented by the Quito Chamber of Commerce.">
   <meta name="author" content="Stephano Martinez">
 
-  <!-- Favicon -->  
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- Social Media Meta -->
-  <meta property="og:title" content="Quito Chamber of Commerce Directory">
-  <meta property="og:description" content="Discover and connect with businesses in the Quito Chamber of Commerce Directory. Find services, shops, and companies in your area.">
-  <meta property="og:image" content="https://stephanom7.github.io/wdd231/chamber/images/social.jpg">
-  <meta property="og:url" content="https://stephanom7.github.io/wdd231/chamber/directory.html">
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/discover.css">
+
+  <script src="scripts/discover.js" type="module" defer></script>
 </head>
 <body>
   <header>
@@ -40,12 +34,16 @@
   </header>
 
   <main>
-    <h1>Quito Chamber of Commerce Directory</h1>
-    <div class="view-buttons">
-      <button id="gridBtn">Grid View</button>
-      <button id="listBtn">List View</button>
-    </div>
-    <section id="members" class="grid"></section>
+    <section class="discover-hero">
+      <h1>Discover Quito</h1>
+      <p>Explore the places that make Quito unforgettable for members, businesses, and visitors alike.</p>
+    </section>
+
+    <div id="visitor-message" class="visitor-message"></div>
+
+    <section id="discover-cards" class="discover-grid">
+      <!-- The 8 cards are inserted here by discover.js -->
+    </section>
   </main>
 
   <footer>
@@ -54,7 +52,5 @@
     <p>Developed by Stephano Martinez - WDD 231</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
-
-  <script src="scripts/directory.js" defer></script>
 </body>
 </html>
