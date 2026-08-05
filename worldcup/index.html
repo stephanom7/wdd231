@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | United26 Fan Hub</title>
+  <meta name="description" content="Website plan document for the United26 Fan Hub, a fan guide site for the 2026 FIFA World Cup hosted in the United States, Mexico, and Canada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="scoreboard">
+    <p class="kicker">WDD231 &mdash; Site Plan</p>
+    <h1>United26 Fan Hub</h1>
+    <p class="subtitle">A fan guide for the 2026 FIFA World Cup &mdash; United States &middot; Mexico &middot; Canada</p>
+  </header>
+
+  <main>
+
+    <section id="site-name" class="plan-section" aria-labelledby="site-name-heading">
+      <p class="eyebrow">01 &mdash; Site Name</p>
+      <h2 id="site-name-heading">United26</h2>
+      <p class="lede">Optional domain: <em>united26.com</em></p>
+      <p>The name fuses <strong>United</strong> &mdash; a nod to the three co-host nations sharing a single tournament &mdash; with <strong>26</strong>, the tournament year. It is short, easy to say out loud, and works equally well as a spoken brand, a logo mark, and a URL. It also avoids tying the site to any one country&rsquo;s language or flag, which fits a guide meant to serve fans in the US, Mexico, and Canada alike.</p>
+    </section>
+
+    <section id="site-purpose" class="plan-section" aria-labelledby="site-purpose-heading">
+      <p class="eyebrow">02 &mdash; Site Purpose</p>
+      <h2 id="site-purpose-heading">Site Purpose</h2>
+      <p>United26 is a general information hub for soccer fans following the 2026 FIFA World Cup. The site brings together the essentials fans need in one place: an overview of the tournament with key dates and highlights, a guide to the host cities and stadiums across all three countries, and a look at the participating teams, groups, and match schedule. Dynamic content &mdash; including a live countdown to kickoff and data pulled from a remote API such as team rankings, match schedules, or host&#8209;city weather &mdash; keeps the information current as the tournament approaches.</p>
+    </section>
+
+    <section id="scenarios" class="plan-section" aria-labelledby="scenarios-heading">
+      <p class="eyebrow">03 &mdash; Scenarios</p>
+      <h2 id="scenarios-heading">Scenarios</h2>
+      <p class="lede">Questions a visitor &mdash; a fan planning to follow or attend the tournament &mdash; might bring to the site:</p>
+      <ol class="scenario-list">
+        <li>
+          <span class="q-tag">Q</span>
+          <p>Which stadium is hosting matches near me, and which teams are playing there?</p>
+        </li>
+        <li>
+          <span class="q-tag">Q</span>
+          <p>When does my national team play in the group stage, and who are their opponents?</p>
+        </li>
+        <li>
+          <span class="q-tag">Q</span>
+          <p>What&rsquo;s the weather likely to be like in a host city around my team&rsquo;s match dates?</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="color-scheme" class="plan-section" aria-labelledby="color-scheme-heading">
+      <p class="eyebrow">04 &mdash; Color Scheme</p>
+      <h2 id="color-scheme-heading">Color Scheme</h2>
+      <p class="lede">The palette is drawn from the match itself rather than from any one country&rsquo;s flag: pitch green, chalk lines, floodlight white, and the gold of the trophy, with a touchline red reserved for small accents.</p>
+      <ul class="kit-card" role="list">
+        <li class="swatch" style="--swatch:#0B3D2E;">
+          <span class="swatch-block"></span>
+          <span class="swatch-name">Pitch Green <code>#0B3D2E</code></span>
+          <span class="swatch-use">Header, footer, and section backgrounds</span>
+        </li>
+        <li class="swatch" style="--swatch:#121F3B;">
+          <span class="swatch-block"></span>
+          <span class="swatch-name">Ink Navy <code>#121F3B</code></span>
+          <span class="swatch-use">Body text and headings on light backgrounds</span>
+        </li>
+        <li class="swatch" style="--swatch:#F7F5F0;">
+          <span class="swatch-block" style="border:1px solid #cfc9bb;"></span>
+          <span class="swatch-name">Chalk White <code>#F7F5F0</code></span>
+          <span class="swatch-use">Main page background and text on dark backgrounds</span>
+        </li>
+        <li class="swatch" style="--swatch:#D4A017;">
+          <span class="swatch-block"></span>
+          <span class="swatch-name">Goal Gold <code>#D4A017</code></span>
+          <span class="swatch-use">Links, headings accents, eyebrow labels, borders</span>
+        </li>
+        <li class="swatch" style="--swatch:#C8102E;">
+          <span class="swatch-block"></span>
+          <span class="swatch-name">Touchline Red <code>#C8102E</code></span>
+          <span class="swatch-use">Small accents only &mdash; the Q tags in Scenarios above</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="typography" class="plan-section" aria-labelledby="typography-heading">
+      <p class="eyebrow">05 &mdash; Typography</p>
+      <h2 id="typography-heading">Typography</h2>
+      <ul class="type-card" role="list">
+        <li class="type-row">
+          <span class="type-role">Display &mdash; Bebas Neue</span>
+          <p class="type-sample type-sample--display">United26</p>
+          <span class="type-use">Page title and section headings (h1&ndash;h2)</span>
+        </li>
+        <li class="type-row">
+          <span class="type-role">Body &mdash; Inter</span>
+          <p class="type-sample type-sample--body">Follow every host city, every stadium, every match.</p>
+          <span class="type-use">Paragraphs, list text, and navigation</span>
+        </li>
+        <li class="type-row">
+          <span class="type-role">Utility &mdash; Space Mono</span>
+          <p class="type-sample type-sample--mono">01 &mdash; KICKOFF IN 214:06:42:11</p>
+          <span class="type-use">Eyebrow labels, the countdown timer, and stat/data callouts</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="wireframe" class="plan-section" aria-labelledby="wireframe-heading">
+      <p class="eyebrow">06 &mdash; Wireframe</p>
+      <h2 id="wireframe-heading">Wireframe</h2>
+      <p class="lede">Hand-drawn sketches of the home page layout for small and large viewports.</p>
+      <div class="wireframe-grid">
+        <figure class="wireframe-slot">
+          <img src="wireframe-mobile.jpg" alt="Hand-drawn wireframe sketch of the home page on a small mobile viewport" style="width:100%; border:1px solid #ddd6c7;">
+          <figcaption>Home page &mdash; small viewport</figcaption>
+        </figure>
+        <figure class="wireframe-slot">
+          <img src="wireframe-desktop.jpg" alt="Hand-drawn wireframe sketch of the home page on a large desktop/tablet viewport" style="width:100%; border:1px solid #ddd6c7;">
+          <figcaption>Home page &mdash; large viewport</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="scoreboard scoreboard--footer">
+    <p>Site Plan &middot; United26 Fan Hub &middot; WDD231</p>
+  </footer>
+
+</body>
+</html>
