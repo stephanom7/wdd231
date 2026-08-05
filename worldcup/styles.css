@@ -109,7 +109,6 @@ main {
   color: var(--ink-navy);
 }
 
-/* Scenarios */
 .scenario-list {
   list-style: none;
   margin: 0;
@@ -139,7 +138,6 @@ main {
   margin: 0;
 }
 
-/* Color scheme swatches */
 .kit-card {
   list-style: none;
   margin: 0;
@@ -178,7 +176,6 @@ main {
   color: #3d3a2f;
 }
 
-/* Typography specimen */
 .type-card {
   list-style: none;
   margin: 0;
@@ -227,7 +224,6 @@ main {
   color: #3d3a2f;
 }
 
-/* Wireframe placeholders */
 .wireframe-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
