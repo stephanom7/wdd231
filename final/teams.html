@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United26 | Teams</title>
+  <meta name="description" content="Browse all 48 teams competing in the 2026 FIFA World Cup, grouped by stage, on United26.">
+  <meta name="author" content="Stephano Martinez">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="United26 | Teams">
+  <meta property="og:description" content="Browse all 48 teams competing in the 2026 FIFA World Cup, grouped by stage.">
+  <meta property="og:image" content="https://stephanom7.github.io/wdd231/final/images/social.jpg">
+  <meta property="og:url" content="https://stephanom7.github.io/wdd231/final/teams.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/teams.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <a href="index.html" class="brand">United26</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+    <ul id="navLinks" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html" aria-current="page">Teams</a></li>
+      <li><a href="host-cities.html">Host Cities</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Teams</h1>
+      <p>All 48 nations competing at the 2026 FIFA World Cup, grouped from A to L.</p>
+    </section>
+
+    <div class="team-controls" id="teamControls">
+      <button type="button" data-filter="all" class="active">All Teams</button>
+      <button type="button" data-filter="host">Host Nations</button>
+      <button type="button" data-filter="favorites">My Favorites</button>
+    </div>
+
+    <section class="team-grid" id="teamGrid" aria-live="polite">
+      <!-- Cards inserted by teams.js -->
+    </section>
+  </main>
+
+  <dialog id="teamModal">
+    <div class="modal-content" id="modalContent">
+      <!-- Filled by modal.js -->
+    </div>
+  </dialog>
+
+  <footer>
+    <p>&copy; <span id="year"></span> United26 Fan Hub</p>
+    <p>Developed by Stephano Martinez - WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.loom.com/share/62c3d043982848bdb762c8770a2c1d78" target="_blank" rel="noopener">Video Demo</a></p>
+  </footer>
+</body>
+</html>

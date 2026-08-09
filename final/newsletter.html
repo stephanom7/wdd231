@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United26 | Newsletter Signup</title>
+  <meta name="description" content="Sign up for the United26 newsletter to get updates about the 2026 FIFA World Cup.">
+  <meta name="author" content="Stephano Martinez">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="United26 | Newsletter Signup">
+  <meta property="og:description" content="Sign up for the United26 newsletter to get updates about the 2026 FIFA World Cup.">
+  <meta property="og:image" content="https://stephanom7.github.io/wdd231/final/images/social.jpg">
+  <meta property="og:url" content="https://stephanom7.github.io/wdd231/final/newsletter.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <a href="index.html" class="brand">United26</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+    <ul id="navLinks" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="host-cities.html">Host Cities</a></li>
+      <li><a href="newsletter.html" aria-current="page">Newsletter</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Join the United26 Newsletter</h1>
+      <p>Get match reminders, host city guides, and team updates in your inbox.</p>
+    </section>
+
+    <form class="newsletter-form" action="thankyou.html" method="get">
+
+      <label for="firstName">
+        First Name
+        <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+      </label>
+
+      <label for="email">
+        Email Address
+        <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="example@email.com" required>
+      </label>
+
+      <label for="favoriteTeam">
+        Favorite Team
+        <select id="favoriteTeam" name="favoriteTeam" title="Select your favorite team" required>
+          <option value="" disabled selected>Select a team</option>
+          <option value="Mexico">Mexico</option>
+          <option value="Canada">Canada</option>
+          <option value="United States">United States</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Spain">Spain</option>
+          <option value="France">France</option>
+          <option value="England">England</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label for="updates">
+        How often would you like updates?
+        <select id="updates" name="updates" title="Select your update frequency" required>
+          <option value="" disabled selected>Select a frequency</option>
+          <option value="Daily">Daily</option>
+          <option value="Weekly">Weekly</option>
+          <option value="Match days only">Match days only</option>
+        </select>
+      </label>
+
+      <label for="comments">
+        Anything else you'd like us to know?
+        <textarea id="comments" name="comments" title="Optional comments"></textarea>
+      </label>
+
+      <input type="hidden" id="timestamp" name="timestamp">
+
+      <input type="submit" value="Sign Up">
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> United26 Fan Hub</p>
+    <p>Developed by Stephano Martinez - WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.loom.com/share/62c3d043982848bdb762c8770a2c1d78" target="_blank" rel="noopener">Video Demo</a></p>
+  </footer>
+</body>
+</html>

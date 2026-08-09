@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>United26 | Host Cities</title>
+  <meta name="description" content="Explore all 16 host cities and stadiums of the 2026 FIFA World Cup across the United States, Mexico, and Canada.">
+  <meta name="author" content="Stephano Martinez">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+  <meta property="og:title" content="United26 | Host Cities">
+  <meta property="og:description" content="Explore all 16 host cities and stadiums of the 2026 FIFA World Cup across the United States, Mexico, and Canada.">
+  <meta property="og:image" content="https://stephanom7.github.io/wdd231/final/images/social.jpg">
+  <meta property="og:url" content="https://stephanom7.github.io/wdd231/final/host-cities.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <script type="module" src="scripts/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <a href="index.html" class="brand">United26</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+    <ul id="navLinks" class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="teams.html">Teams</a></li>
+      <li><a href="host-cities.html" aria-current="page">Host Cities</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <h1>Host Cities</h1>
+      <p>16 stadiums across three countries made 2026 the largest World Cup ever played.</p>
+    </section>
+
+    <section class="country-group">
+      <h2>United States (11 cities)</h2>
+      <div class="city-grid">
+        <article class="city-card">
+          <h3>New York / New Jersey</h3>
+          <p class="stadium-name">MetLife Stadium</p>
+          <p>Host of the tournament final.</p>
+        </article>
+        <article class="city-card">
+          <h3>Los Angeles</h3>
+          <p class="stadium-name">SoFi Stadium</p>
+          <p>One of the most expensive stadiums ever built.</p>
+        </article>
+        <article class="city-card">
+          <h3>Dallas</h3>
+          <p class="stadium-name">AT&amp;T Stadium</p>
+          <p>The tournament's largest venue, hosting a semi-final.</p>
+        </article>
+        <article class="city-card">
+          <h3>Atlanta</h3>
+          <p class="stadium-name">Mercedes-Benz Stadium</p>
+          <p>Hosted a semi-final in the American South.</p>
+        </article>
+        <article class="city-card">
+          <h3>Houston</h3>
+          <p class="stadium-name">NRG Stadium</p>
+          <p>Retractable roof keeps matches climate-controlled.</p>
+        </article>
+        <article class="city-card">
+          <h3>Kansas City</h3>
+          <p class="stadium-name">Arrowhead Stadium</p>
+          <p>Known for having one of the loudest crowds in sports.</p>
+        </article>
+        <article class="city-card">
+          <h3>Seattle</h3>
+          <p class="stadium-name">Lumen Field</p>
+          <p>Expanded to nearly 69,000 seats for the tournament.</p>
+        </article>
+        <article class="city-card">
+          <h3>San Francisco Bay Area</h3>
+          <p class="stadium-name">Levi's Stadium</p>
+          <p>Hosted several knockout stage matches.</p>
+        </article>
+        <article class="city-card">
+          <h3>Miami</h3>
+          <p class="stadium-name">Hard Rock Stadium</p>
+          <p>A gateway venue for South American travelling fans.</p>
+        </article>
+        <article class="city-card">
+          <h3>Philadelphia</h3>
+          <p class="stadium-name">Lincoln Financial Field</p>
+          <p>One of two East Coast venues alongside New York/New Jersey.</p>
+        </article>
+        <article class="city-card">
+          <h3>Boston</h3>
+          <p class="stadium-name">Gillette Stadium</p>
+          <p>Brought World Cup football to New England.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="country-group">
+      <h2>Mexico (3 cities)</h2>
+      <div class="city-grid">
+        <article class="city-card">
+          <h3>Mexico City</h3>
+          <p class="stadium-name">Estadio Azteca</p>
+          <p>Hosted the opening match, becoming the first stadium to host three World Cups.</p>
+        </article>
+        <article class="city-card">
+          <h3>Guadalajara</h3>
+          <p class="stadium-name">Estadio Akron</p>
+          <p>Home to some of Mexico's most passionate football fans.</p>
+        </article>
+        <article class="city-card">
+          <h3>Monterrey</h3>
+          <p class="stadium-name">Estadio BBVA</p>
+          <p>A modern venue in Mexico's industrial capital.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="country-group">
+      <h2>Canada (2 cities)</h2>
+      <div class="city-grid">
+        <article class="city-card">
+          <h3>Toronto</h3>
+          <p class="stadium-name">BMO Field</p>
+          <p>A soccer-specific stadium on the shores of Lake Ontario.</p>
+        </article>
+        <article class="city-card">
+          <h3>Vancouver</h3>
+          <p class="stadium-name">BC Place</p>
+          <p>The westernmost venue of the entire tournament.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> United26 Fan Hub</p>
+    <p>Developed by Stephano Martinez - WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.loom.com/share/62c3d043982848bdb762c8770a2c1d78" target="_blank" rel="noopener">Video Demo</a></p>
+  </footer>
+</body>
+</html>

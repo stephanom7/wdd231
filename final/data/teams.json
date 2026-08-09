@@ -1,0 +1,61 @@
+[
+  { "name": "Mexico", "group": "A", "confederation": "CONCACAF", "flagCode": "mx", "host": true },
+  { "name": "South Korea", "group": "A", "confederation": "AFC", "flagCode": "kr", "host": false },
+  { "name": "South Africa", "group": "A", "confederation": "CAF", "flagCode": "za", "host": false },
+  { "name": "Czech Republic", "group": "A", "confederation": "UEFA", "flagCode": "cz", "host": false },
+
+  { "name": "Canada", "group": "B", "confederation": "CONCACAF", "flagCode": "ca", "host": true },
+  { "name": "Switzerland", "group": "B", "confederation": "UEFA", "flagCode": "ch", "host": false },
+  { "name": "Qatar", "group": "B", "confederation": "AFC", "flagCode": "qa", "host": false },
+  { "name": "Bosnia and Herzegovina", "group": "B", "confederation": "UEFA", "flagCode": "ba", "host": false },
+
+  { "name": "Brazil", "group": "C", "confederation": "CONMEBOL", "flagCode": "br", "host": false },
+  { "name": "Morocco", "group": "C", "confederation": "CAF", "flagCode": "ma", "host": false },
+  { "name": "Scotland", "group": "C", "confederation": "UEFA", "flagCode": "gb-sct", "host": false },
+  { "name": "Haiti", "group": "C", "confederation": "CONCACAF", "flagCode": "ht", "host": false },
+
+  { "name": "United States", "group": "D", "confederation": "CONCACAF", "flagCode": "us", "host": true },
+  { "name": "Paraguay", "group": "D", "confederation": "CONMEBOL", "flagCode": "py", "host": false },
+  { "name": "Australia", "group": "D", "confederation": "AFC", "flagCode": "au", "host": false },
+  { "name": "Turkiye", "group": "D", "confederation": "UEFA", "flagCode": "tr", "host": false },
+
+  { "name": "Germany", "group": "E", "confederation": "UEFA", "flagCode": "de", "host": false },
+  { "name": "Ecuador", "group": "E", "confederation": "CONMEBOL", "flagCode": "ec", "host": false },
+  { "name": "Ivory Coast", "group": "E", "confederation": "CAF", "flagCode": "ci", "host": false },
+  { "name": "Curacao", "group": "E", "confederation": "CONCACAF", "flagCode": "cw", "host": false },
+
+  { "name": "Netherlands", "group": "F", "confederation": "UEFA", "flagCode": "nl", "host": false },
+  { "name": "Japan", "group": "F", "confederation": "AFC", "flagCode": "jp", "host": false },
+  { "name": "Tunisia", "group": "F", "confederation": "CAF", "flagCode": "tn", "host": false },
+  { "name": "Sweden", "group": "F", "confederation": "UEFA", "flagCode": "se", "host": false },
+
+  { "name": "Belgium", "group": "G", "confederation": "UEFA", "flagCode": "be", "host": false },
+  { "name": "Iran", "group": "G", "confederation": "AFC", "flagCode": "ir", "host": false },
+  { "name": "Egypt", "group": "G", "confederation": "CAF", "flagCode": "eg", "host": false },
+  { "name": "New Zealand", "group": "G", "confederation": "OFC", "flagCode": "nz", "host": false },
+
+  { "name": "Spain", "group": "H", "confederation": "UEFA", "flagCode": "es", "host": false },
+  { "name": "Uruguay", "group": "H", "confederation": "CONMEBOL", "flagCode": "uy", "host": false },
+  { "name": "Saudi Arabia", "group": "H", "confederation": "AFC", "flagCode": "sa", "host": false },
+  { "name": "Cape Verde", "group": "H", "confederation": "CAF", "flagCode": "cv", "host": false },
+
+  { "name": "France", "group": "I", "confederation": "UEFA", "flagCode": "fr", "host": false },
+  { "name": "Senegal", "group": "I", "confederation": "CAF", "flagCode": "sn", "host": false },
+  { "name": "Norway", "group": "I", "confederation": "UEFA", "flagCode": "no", "host": false },
+  { "name": "Iraq", "group": "I", "confederation": "AFC", "flagCode": "iq", "host": false },
+
+  { "name": "Argentina", "group": "J", "confederation": "CONMEBOL", "flagCode": "ar", "host": false },
+  { "name": "Algeria", "group": "J", "confederation": "CAF", "flagCode": "dz", "host": false },
+  { "name": "Austria", "group": "J", "confederation": "UEFA", "flagCode": "at", "host": false },
+  { "name": "Jordan", "group": "J", "confederation": "AFC", "flagCode": "jo", "host": false },
+
+  { "name": "Portugal", "group": "K", "confederation": "UEFA", "flagCode": "pt", "host": false },
+  { "name": "Colombia", "group": "K", "confederation": "CONMEBOL", "flagCode": "co", "host": false },
+  { "name": "Uzbekistan", "group": "K", "confederation": "AFC", "flagCode": "uz", "host": false },
+  { "name": "DR Congo", "group": "K", "confederation": "CAF", "flagCode": "cd", "host": false },
+
+  { "name": "England", "group": "L", "confederation": "UEFA", "flagCode": "gb-eng", "host": false },
+  { "name": "Croatia", "group": "L", "confederation": "UEFA", "flagCode": "hr", "host": false },
+  { "name": "Ghana", "group": "L", "confederation": "CAF", "flagCode": "gh", "host": false },
+  { "name": "Panama", "group": "L", "confederation": "CONCACAF", "flagCode": "pa", "host": false }
+]
